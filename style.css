@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+height: 100vh;
+background-color: rgb(223, 238, 248);
+}
+/* utiltey classes */
+.green-color {
+    color: rgb(24, 185, 37);
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+/* start header  */
+#home {
+    background-color: rgb(223, 238, 248);
+    height: 100%; 
+}
+
+#home .nav-par {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+#home .nav-par nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+}
+
+#home .nav-par nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#home .nav-par nav a {
+    color: rgb(18, 33, 44);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+#home .nav-par nav ul a {
+    margin-right: 15px;
+    color:rgb(18, 33, 44);
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 20px
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    height: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 150px 15px;
+    
+}
+
+.content .content-text {
+    margin-bottom: 2rem;
+}
+
+.content .content-text h1 {
+    font-size: 60px;
+    color:rgb(18, 33, 44);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+.content .content-text p {
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(18, 33, 44);
+    text-transform: capitalize;
+}
+
+.content img {
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid #ccc
+}
+
+@media (max-width: 768px) {
+    #home {
+        width: 750px;
+        height: 100%;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding: 15rem 0 0 ;
+        
+        max-width: 550px;
+        text-align: center;
+    }
+
+    .content img {
+        align-items: center;
+        margin: 25px auto;
+
+    }
+    #home .nav-par nav {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin: 1.5rem 0 ;
+        
+    }
+
+  
+    #home .nav-par nav a {
+        font-size: 50px;
+    }
+   
+
+    #home .nav-par nav ul {
+        margin-top: 15px;
+        text-align: center;
+        justify-content: center
+    }
+}
+
+/*
+@media (max-width: 992px) {
+    #home {
+        width: 950px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content .content-text h1 {
+        font-size: 40px;
+        
+    }
+} */
+
+/* end header  */
